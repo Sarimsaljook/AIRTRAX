@@ -80,6 +80,8 @@ public class Main {
 
                 passengers.remove(Integer.parseInt(customerID));
                 passengers.add(Integer.parseInt(customerID), customer + ", status: CHECKED IN");
+                System.out.println("PASSENGER CHECKED IN");
+                System.out.println("----------------------------------");
             }
             case "updatePassenger" -> {
                 System.out.println("----------------------------------");
@@ -104,6 +106,7 @@ public class Main {
                 passengers.remove(Integer.parseInt(customerID));
                 passengers.add(Integer.parseInt(customerID), customerRecord);
                 System.out.println(name + "'s" + " CUSTOMER RECORD UPDATED SUCCESSFULLY!");
+                System.out.println("----------------------------------");
             }
             default -> {
                 System.out.println("----------------------------------");
